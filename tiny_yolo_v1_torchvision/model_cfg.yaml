@@ -1,0 +1,7 @@
+VOCdevkit_root_path: "/dataset"
+batch_size: 128
+channel: 3
+height: 448
+width: 448
+fp32_min: 0.0
+fp32_max: 1.0

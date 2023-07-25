@@ -1,0 +1,9 @@
+tra_dataset_path: "/dataset/cifar10"
+val_dataset_path: "/dataset/cifar10"
+cal_dataset_path: "/dataset/mlperf/ic/ic01_cal"
+batch_size: 128
+channel: 3
+height: 32
+width: 32
+fp32_min: 0.0
+fp32_max: 255.0

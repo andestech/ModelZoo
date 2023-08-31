@@ -8,7 +8,7 @@ loss = return_fp32_model().loss
 
 def training_set(model):
     optimizer = torch.optim.SGD(model.parameters(), 1e-3, momentum=0.9, weight_decay=5e-4)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, 100)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 30, 0.1)
     return optimizer, scheduler
 
 

@@ -1,6 +1,6 @@
 import torch
 import torch.nn.functional as F
-from model_ws_package.tiny_yolo_v2_torchvision.utils import (
+from ModelZoo.tiny_yolo_v2_torchvision.utils import (
     compute_iou, 
     detect,
     YOLOv2TrainPostProcessing,
@@ -12,7 +12,7 @@ from model_ws_package.tiny_yolo_v2_torchvision.utils import (
     save_weights,
     evaluate_map_voc,
 )
-from model_ws_package.tiny_yolo_v2_torchvision.dataset import VOC_CLASS, voc_detection
+from ModelZoo.tiny_yolo_v2_torchvision.dataset import VOC_CLASS, voc_detection
 from torch import Tensor, nn, ones_like, zeros_like
 
 __all__ = ["Tiny_YOLOv2"]
@@ -156,8 +156,8 @@ class Tiny_YOLOv2(nn.Module):
 
 if __name__ == "__main__":
     device = "cuda:0"
-    model = Tiny_YOLOv2("model_ws_package/tiny_yolo_v2_torchvision/yolov2.cfg").to(device)
-    load_weights(model, "model_ws_package/tiny_yolo_v2_torchvision/yolov2-voc.weights", version="v3")
+    model = Tiny_YOLOv2("ModelZoo/tiny_yolo_v2_torchvision/yolov2.cfg").to(device)
+    load_weights(model, "ModelZoo/tiny_yolo_v2_torchvision/yolov2-voc.weights", version="v3")
     optim = torch.optim.SGD(model.parameters(), 0.0001, momentum=0.9, weight_decay=0.0005)
     # sched = torch.optim.lr_scheduler.CyclicLR(
     #     optim, base_lr=0.00001, max_lr=0.001, base_momentum=0.1, max_momentum=0.9, mode="triangular2", step_size_up=10

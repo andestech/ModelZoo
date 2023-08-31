@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-from model_ws_package.tiny_yolo_v1_torchvision.utils import (
+from ModelZoo.tiny_yolo_v1_torchvision.utils import (
     YOLOv1TrainPostProcessing,
     create_network,
     decode_v1,
@@ -11,7 +11,7 @@ from model_ws_package.tiny_yolo_v1_torchvision.utils import (
     compute_iou,
     detect,
 )
-from model_ws_package.tiny_yolo_v1_torchvision.voc import VOC_CLASS, voc_detection
+from ModelZoo.tiny_yolo_v1_torchvision.voc import VOC_CLASS, voc_detection
 from torch import Tensor, nn, zeros_like
 from torch.nn import functional as F
 
@@ -132,14 +132,14 @@ class Tiny_YOLOv1(nn.Module):
 
 def train_object_detection():
     device = "cuda:0"
-    model = Tiny_YOLOv1("model_ws_package/tiny_yolo_v1_torchvision/yolov1-tiny.cfg").to(device)
+    model = Tiny_YOLOv1("ModelZoo/tiny_yolo_v1_torchvision/yolov1-tiny.cfg").to(device)
     optim = torch.optim.SGD(model.parameters(), 1e-4, momentum=0.9, weight_decay=5e-4)
     # sched = torch.optim.lr_scheduler.CyclicLR(
     #     optim, base_lr=0.00001, max_lr=0.0001, base_momentum=0.3, mode="triangular2", step_size_up=3000
     # )
     # load_weights(model, "weights/tiny-yolov1.weights", "v1")
     model.load_state_dict(
-        torch.load("model_ws_package/tiny_yolo_v1_torchvision/weights/yolov1.pt", map_location=device)
+        torch.load("ModelZoo/tiny_yolo_v1_torchvision/weights/yolov1.pt", map_location=device)
     )
     dataloader = voc_detection(
         img_size=(448, 448),

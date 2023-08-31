@@ -1,7 +1,6 @@
 from typing import Callable, Dict, List, Tuple
 import sys
 
-sys.path.append("/local2/evansong/pruner_generator/origin/andesPrune")
 import numpy as np
 from PIL.Image import Image
 from .transforms import *

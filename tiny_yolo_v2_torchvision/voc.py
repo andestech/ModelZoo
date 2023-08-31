@@ -3,8 +3,8 @@ import sys
 
 import numpy as np
 from PIL.Image import Image
-from model_ws_package.tiny_yolo_v2_torchvision.transforms import *
-from model_ws_package.tiny_yolo_v2_torchvision.utils import YOLOv2TrainPostProcessing
+from ModelZoo.tiny_yolo_v2_torchvision.transforms import *
+from ModelZoo.tiny_yolo_v2_torchvision.utils import YOLOv2TrainPostProcessing
 from torch.utils.data import ConcatDataset, DataLoader
 from torchvision.datasets import VOCDetection
 

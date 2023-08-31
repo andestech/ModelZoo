@@ -20,7 +20,7 @@ Template for return data pair
 
 
 def return_dataset():
-    dataloader = voc_detection_yolov1(root= input_yaml["VOCdevkit_root_path"],batch_size=128)
+    dataloader = voc_detection_yolov1(root= input_yaml["VOCdevkit_root_path"],batch_size=input_yaml["batch_size"])
     cos_dataloader = {}
     return dataloader["train"], dataloader["test"], dataloader["train"], dataloader["cos"]
 

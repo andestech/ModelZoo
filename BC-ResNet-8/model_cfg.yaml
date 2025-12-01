@@ -1,0 +1,11 @@
+tra_dataset_path: "/your_path/speech_commands_v0.02_split/train_12class"
+val_dataset_path: "/your_path/speech_commands_v0.02_split/valid_12class"
+test_dataset_path: "/your_path/speech_commands_v0.02_split/test_12class"
+noise_dataset_path: "/your_path/speech_commands_v0.02_split/_background_noise_"
+batch_size: 128
+dummy_input: [[1,1,40,101]]
+channel: 3
+height: 32
+width: 32
+fp32_min: -14.0
+fp32_max: 9.0

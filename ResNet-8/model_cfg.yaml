@@ -1,0 +1,10 @@
+tra_dataset_path: "/your_path/cifar10"
+val_dataset_path: "/your_path/cifar10"
+cal_dataset_path: "/your_path/cifar10_cal"
+batch_size: 128
+dummy_input: [[1,3,32,32]]
+channel: 3
+height: 32
+width: 32
+fp32_min: 0.0
+fp32_max: 255.0

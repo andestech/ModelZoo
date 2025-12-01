@@ -1,0 +1,8 @@
+tra_dataset_path: "/your_path/wav2letter/"
+batch_size: 128
+dummy_input: [[1, 39, 1, 296]]
+channel: 1
+width: 296
+height: 39
+fp32_min: -5.5
+fp32_max: 15.5

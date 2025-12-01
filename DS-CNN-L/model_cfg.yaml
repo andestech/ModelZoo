@@ -1,0 +1,10 @@
+tra_dataset_path: "/your_path/dscnn_processed_dataset/train"
+val_dataset_path: "/your_path/dscnn_processed_dataset/val"
+test_dataset_path: "/your_path/dscnn_processed_dataset/test"
+batch_size: 128
+dummy_input: [[1,1,49,10]]
+channel: 1
+width: 10
+height: 49
+fp32_min: -123.5697250366
+fp32_max: 43.6676597595

@@ -1,0 +1,11 @@
+data_source_tra: "/your_path/visualwakewords/coco/all"
+data_source_val: "/your_path/visualwakewords/coco/all"
+ann_file_tra: "/your_path/visualwakewords/coco/annotations/instances_train.json"
+ann_file_val: "/your_path/visualwakewords/coco/annotations/instances_val.json"
+batch_size: 64
+dummy_input: [[1,3,144,144]]
+channel: 3
+width: 144
+height: 144
+fp32_min: -1.0
+fp32_max: 1.0

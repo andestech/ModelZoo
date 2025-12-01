@@ -1,0 +1,13 @@
+train_clean_wave_path: "/your_path/rnnwave/clean_trainset_56spk_wav/"
+train_noisy_wave_path: "/your_path/rnnwave/noisy_trainset_56spk_wav/"
+clean_wave_path: "/your_path/rnnwave/clean_testset_wav"
+noisy_wave_path: "/your_path/rnnwave/noisy_testset_wav"
+dummy_input: [[1,1,512],[1,2,128,2],[1,2,128,2]]
+recursive_input: [[1,1],[2,2]]
+batch_size: 1
+channel: 1
+height: 257
+width: 1
+fp32_min: -413.9567
+fp32_max: 413.9567
+

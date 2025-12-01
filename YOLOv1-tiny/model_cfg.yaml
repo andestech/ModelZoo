@@ -1,0 +1,8 @@
+VOCdevkit_root_path: "/your_path/VOCdevkit"
+batch_size: 64
+dummy_input: [[1,3,448,448]]
+channel: 3
+height: 448
+width: 448
+fp32_min: 0.0
+fp32_max: 1.0

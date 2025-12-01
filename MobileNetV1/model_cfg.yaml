@@ -1,0 +1,9 @@
+tra_dataset_path: "/your_path/ILSVRC2012/raw-data/imagenet-data/train"
+val_dataset_path: "/your_path/ILSVRC2012/raw-data/imagenet-data/val"
+dummy_input: [[1,3,224,224]]
+batch_size: 128
+channel: 3
+height: 224
+width: 224
+fp32_min: -2.1179
+fp32_max: 2.64

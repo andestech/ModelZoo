@@ -1,0 +1,9 @@
+trainset_folder : "/your_path/widerface/train/images/"
+testset_folder : "/your_path/widerface/val/images/"
+dummy_input: [[1,3,640,640]]
+batch_size: 4
+channel: 3
+width: 640
+height: 640
+fp32_min: -123.0
+fp32_max: 151.0

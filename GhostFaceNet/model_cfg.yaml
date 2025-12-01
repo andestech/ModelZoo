@@ -1,0 +1,9 @@
+tra_dataset_path: "/your_path/faces_emore_112x112_folders"
+val_dataset_path: "/your_path/GhostFace_dataset/val"
+batch_size: 128
+dummy_input: [[1,3,112,112]]
+channel: 3
+height: 32
+width: 32
+fp32_min: -0.9961
+fp32_max: 0.9961

@@ -1,0 +1,9 @@
+tra_dataset_path: "/your_path/VOCdevkit/VOC2012/"
+val_dataset_path: "/your_path/VOCdevkit/VOC2007/"
+batch_size: 64
+dummy_input: [[1,3,300,300]]
+channel: 3
+width: 300
+height: 300
+fp32_min: -1.0
+fp32_max: 1.0

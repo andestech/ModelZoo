@@ -111,5 +111,5 @@ For running the quantization workflow of a selected model, see the __AndesAIRE N
 AndesAIRE NN SDK Model Zoo is a project maintained by Andes Technology Corporation, Inc.
 
 ## License
-See the [LICENSE file](LICENSE.txt) for details.
+See the [LICENSE file](LICENSE) for details.
 

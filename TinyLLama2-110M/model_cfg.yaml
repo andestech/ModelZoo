@@ -1,0 +1,19 @@
+inference_phase: ['prefill_128','decode']
+dummy_input: [[1,1024],[1,1024],[1,1024]]
+input_type: ['torch.int32','torch.float32','torch.flaot32']
+kv_cache: [
+    [3, 1], [4, 2], [5, 3], [6, 4], [7, 5], [8, 6],
+    [9, 7], [10, 8], [11, 9], [12, 10], [13, 11], [14, 12],
+    [15, 13], [16, 14], [17, 15], [18, 16], [19, 17], [20, 18],
+    [21, 19], [22, 20], [23, 21], [24, 22], [25, 23], [26, 24]
+]
+dummy_input_prefill_128: [[1,128],[1,128],[1,128]]
+input_type_prefill_128: ['torch.int32','torch.float32','torch.float32']
+dummy_input_decode: [[1,1],[1,1025],[1,1],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64],[1,12,1024,64]]
+input_type_decode: ['torch.int32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32','torch.float32']
+batch_size: 1
+channel: 1
+height: 1
+width: 1
+fp32_min: 0.0
+fp32_max: 1.0

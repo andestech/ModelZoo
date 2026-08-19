@@ -1,0 +1,12 @@
+overrides:
+  - range:
+      from: "input_3"
+      to: "cat_insert_idd"
+      via:
+        nodes: []
+        mode: all
+      include:
+        from: True
+        to: True
+    weight: int8
+    activation: int16

@@ -1,0 +1,9 @@
+dataset_path: "/your_path/squadv2_dataset"
+batch_size: 13
+dummy_input: [[1,384],[1,384],[1,384]]
+input_type: ['torch.int32','torch.float32','torch.int32']
+channel: 3
+width: 224
+height: 224
+fp32_min: -2.1179
+fp32_max: 2.64

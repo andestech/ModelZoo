@@ -19,8 +19,8 @@ Each model directory also stores the generated quantized TFL model, the correspo
   </tr>
 
   <tr>
-    <td rowspan="18">CNN</td>
-    <td rowspan="8">Image Classification</td>
+    <td rowspan="19">CNN</td>
+    <td rowspan="9">Image Classification</td>
     <td><a href="MobileNetV1/README.md">MobileNetV1</a></td>
   </tr>
   <tr>
@@ -43,6 +43,9 @@ Each model directory also stores the generated quantized TFL model, the correspo
   </tr>
   <tr>
     <td><a href="Inception-v2/README.md">Inception-v2</a></td>
+  </tr>
+  <tr>
+    <td><a href="MobileNetV3-Large/README.md">MobileNetV3-Large</a></td>
   </tr>
 
   <tr>
@@ -93,6 +96,23 @@ Each model directory also stores the generated quantized TFL model, the correspo
   <tr>
     <td><a href="DTLN/README.md">DTLN</a></td>
   </tr>
+  <tr>
+    <td rowspan="4">Transformer</td>
+    <td rowspan="1">Question Answering</td>
+    <td><a href="TinyBERT-SQuADv2/README.md">TinyBERT-SQuADv2</a></td>
+  </tr>
+  <tr>
+    <td rowspan="1">Causal Language Modeling</td>
+    <td><a href="TinyLLama2-110M/README.md">TinyLLama2-110M</a></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Image Classification</td>
+    <td><a href="MobileViT-Small/README.md">MobileViT-Small</a></td>
+  </tr>
+  <tr>
+    <td><a href="Swin-Transformer/README.md">Swin-Transformer</a></td>
+  </tr>
+  
 </table>
 
 ## Installation and Usage
